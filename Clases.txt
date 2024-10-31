@@ -1,0 +1,66 @@
+I dentificacion de entidades
+
+Clase: Cliente
+    + nombre: string
+    +documento: string
+    + telefono: string
+
+    -ver_disponibilidad()
+    -pagar_tarifa()
+    
+Clase: Vehiculo
+    + marca: string
+    + placa: string
+    + color: string
+
+    -ingreso()
+    -salida()
+
+Clase: Operador
+    +nombre: string
+    + documento: string
+
+    -registrar_hora_entrada()
+    -registrar_hora_salida()
+
+Clase:Administrador:
+    +nombre: string
+    + documento: string
+
+    -generar_reporte_diario()
+    -gestionar_usuarios()
+
+Clase: notificaciones
+    +fecha_inicio: Date
+    +fecha_fin: Date
+    +ocupación: string
+
+    -generar_notificacion()
+
+Clase Parqueadero
+    + nombre: string
+    +capacidad_maxima: number
+    +espacio_disponible: number
+    +tarifa:number
+    +espacio_en_uso: number
+
+    -registar_entrada()
+    -registrar_salida()
+    -calcular_cobro()
+    -consultar_disponibilidad()
+
+Clase: Espacio
+    +numer_espacio: number
+    +tipo: string
+    +estado: string
+
+    -asignado_vehiculo()
+    -liberado_espacio()
+
+Clase: Pago
+    +monto: number
+    +metodo_pago: string
+    +fecha_pago: Date
+
+    -procesa_pagos()
+    -emitir_recibo()

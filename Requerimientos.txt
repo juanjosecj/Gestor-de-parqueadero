@@ -1,0 +1,59 @@
+Requisitos funcionales
+Gestión de espacios de parqueo:
+
+El sistema debe permitir ver el estado de cada espacio (libre/ocupado) en una interfaz visual.
+Debe permitir asignar un espacio específico a cada vehículo que ingresa.
+Debe liberar el espacio una vez que el vehículo salga.
+
+Registro de entrada y salida de vehículos:
+
+El sistema debe permitir registrar la entrada de un vehículo con datos como la placa, tipo de vehículo, y hora de ingreso.
+Debe registrar la salida de un vehículo con la hora de salida y actualizar la disponibilidad del espacio.
+
+Control de ocupación del parqueadero:
+
+El sistema debe mostrar un indicador de ocupación total (porcentaje de espacios ocupados).
+Debe generar una alerta cuando la ocupación esté cerca de la capacidad total (por ejemplo, al 90%).
+
+Historial y reportes:
+
+El sistema debe almacenar un historial de entradas y salidas de vehículos.
+Debe permitir la generación de reportes con filtros de fechas y otros datos relevantes (tipo de vehículo, tiempo de estadía, etc.).
+
+Gestión de usuarios:
+
+El sistema debe contar con perfiles de usuario con roles y permisos diferenciados (por ejemplo, administrador, operador).
+Debe permitir que el administrador gestione los permisos de los demás usuarios.
+
+Notificaciones:
+
+El sistema debe enviar notificaciones (puede ser vía email o en la misma interfaz) para avisar de situaciones especiales, como parqueadero lleno o vehículo estacionado fuera de horario.
+
+Requisitos no funcionales:
+
+Interfaz de usuario intuitiva:
+
+La interfaz debe ser clara y fácil de usar, permitiendo a los operadores registrar entradas y salidas rápidamente.
+Debe estar disponible en español y en otros idiomas si fuera necesario.
+
+Escalabilidad:
+
+El sistema debe ser capaz de manejar un volumen creciente de datos, como el historial de entradas y salidas de vehículos en parqueaderos de alta rotación.
+
+Disponibilidad y confiabilidad:
+
+Debe estar disponible al menos el 99% del tiempo, ya que es crítico para el control del parqueadero.
+En caso de errores, el sistema debe permitir la recuperación de datos recientes para evitar la pérdida de información.
+
+Seguridad de la información:
+
+Debe tener control de acceso basado en roles.
+La información de los vehículos y la ocupación debe estar protegida y solo accesible para usuarios autorizados.
+
+Compatibilidad multiplataforma:
+
+El sistema debe poder utilizarse en distintos dispositivos, como computadoras y tablets.
+
+Velocidad de respuesta:
+
+Las operaciones de consulta y actualización de datos (por ejemplo, marcar un espacio como ocupado o libre) deben ser inmediatas para no afectar la operación del parqueadero.

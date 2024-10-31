@@ -1,0 +1,84 @@
+Casos de Uso
+
+1)CU01 - Ver disponibilidad de espacios
+
+Descripción: Permite a los administradores y operadores ver la ocupación del parqueadero en tiempo real.
+Actor: Administrador, Operador.
+Flujo principal:
+El usuario ingresa al sistema.
+El sistema muestra el estado de cada espacio (libre u ocupado).
+Resultado: El usuario visualiza la disponibilidad actual del parqueadero.
+
+2)CU02 - Registrar entrada de vehículo
+
+Descripción: Permite registrar la entrada de un vehículo y asignarle un espacio.
+Actor: Operador.
+Flujo principal:
+El operador selecciona un espacio libre.
+Ingresa los datos del vehículo (placa, tipo de vehículo).
+El sistema registra la hora de ingreso y marca el espacio como ocupado.
+Resultado: El vehículo queda registrado, y el espacio es ocupado en el sistema.
+
+3)CU03 - Registrar salida de vehículo
+
+Descripción: Permite registrar la salida de un vehículo, liberando el espacio asignado.
+Actor: Operador.
+Flujo principal:
+El operador selecciona el vehículo que va a salir.
+El sistema registra la hora de salida.
+El sistema actualiza el espacio a "libre".
+Resultado: El espacio queda libre, y se actualiza el historial.
+
+4)CU04 - Consultar historial de vehículos
+
+Descripción: Permite al administrador revisar el historial de entradas y salidas.
+Actor: Administrador.
+Flujo principal:
+El administrador selecciona el periodo de tiempo a consultar.
+El sistema muestra el historial de entradas y salidas con detalles (placa, tipo de vehículo, horarios).
+Resultado: El administrador obtiene un registro histórico de los movimientos en el parqueadero.
+
+5)CU05 - Generar reporte de ocupación
+
+Descripción: Genera reportes sobre el uso del parqueadero.
+Actor: Administrador.
+Flujo principal:
+El administrador selecciona los parámetros del reporte (por fecha, tipo de vehículo, etc.).
+El sistema genera el reporte en el formato deseado (visual o exportable).
+Resultado: El administrador obtiene un reporte de ocupación y estadísticas.
+
+6)CU06 - Gestión de usuarios
+
+Descripción: Permite al administrador crear, modificar y eliminar usuarios del sistema.
+Actor: Administrador.
+Flujo principal:
+El administrador selecciona la opción de gestionar usuarios.
+Puede agregar, editar o eliminar usuarios y asignarles roles.
+Resultado: Los usuarios son gestionados y tienen los permisos correctos para operar en el sistema.
+
+7)CU07 - Enviar notificaciones de ocupación
+
+Descripción: Envía una notificación cuando la ocupación del parqueadero se acerca a su límite máximo.
+Actor: Sistema de notificaciones.
+Flujo principal:
+El sistema revisa la ocupación actual.
+Si la ocupación supera el 90%, se envía una notificación a los operadores y administradores.
+Resultado: El administrador y operador son notificados de que la ocupación está alta.
+
+8)CU08 - Consultar disponibilidad de espacios (Cliente)
+
+Descripción: Permite al cliente consultar si hay espacios disponibles en el parqueadero.
+Actor: Cliente.
+Flujo principal:
+El cliente accede al sistema de consulta (web o app).
+El sistema muestra la disponibilidad general del parqueadero (puede ser en número o porcentaje).
+Resultado: El cliente visualiza si hay espacios disponibles antes de dirigirse al parqueadero.
+
+9) CU09 - Integración con sistema de pagos
+
+Descripción: Integrar el sistema con una pasarela de pagos para procesar los cobros del servicio de parqueo.
+Actor: Sistema de pagos.
+Flujo principal:
+Al registrar la salida del vehículo, el sistema calcula el costo total.
+Se muestra al cliente el monto y se procede al pago.
+Resultado: El cliente paga el servicio y el vehículo es liberado del parqueadero.
